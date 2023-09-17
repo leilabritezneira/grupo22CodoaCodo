@@ -1,0 +1,90 @@
+<!-- #----COMANDOS BÁSICOS PARA INICIALIZAR 
+        LA CARPETA GIT EN VISUAL STUDIO CODE--------
+
+        1. Verficar si la instalación de Git esta ok con: git version
+        2. Inicializar git (Genera un archivo oculto donde guarda la 
+        info del proyecto y veremos los archivos con una U): git init
+        
+        #----------------------------------------
+        Consultar los datos que tenemos registrados:
+        git config --global -e 
+        # Si le pide identificarse----------------------------------
+        git config --global user.email "ESCRIBIR EL CORREO CON EL QUE SE REGISTRARON EN GITHUB"
+        git config --global user.name "NOMBRE DE USUARIO"
+
+        3. Consultar estado del repositorio 
+        (Se verá: Untracked files [No tienen seguimiento]): git status
+        4. Crear un archivo: index.html y agregarlo en la carpeta git:  git add nombre_del_archivo
+        5. Verificar estado de los archivos 
+        (Se verá el archivo con una A de agregado): git status
+        6. Se hace un comentario para registrar el cambio:  git commit -m "Comentario"
+        
+        7. Para agregar todos archivos a la carpeta git, se usa: git add .
+        8. Volver a comentar el cambio realizado en la carpeta de trabajo: git commit -m "Comentario"
+        
+        # ----Comunicar el repositorio local con el repositorio remoto en GitHub---------
+        1. Loguearse en GitHub.
+        2. Crear un repositorio (Asignar un nombre y descripción): create repository
+        3. Agregar los tres comandos finales de uno a uno: git remote add origin url_del_repositorio
+        4. Comando que indica a que rama enviará la info (A la principal): git branch -M main
+        5. Comando que envía la info por primera vez del repositorio local al remoto: git push -u origin main
+    
+        # Ver todos los commit -------------------------------
+        1. Ver todos los commit realizados en la carpeta de trabajo: git log --oneline
+        2. Crear la carpeta templates y crear el archivo: contacto.html
+        2.Permite regresar a una carpeta trabajada anteriormente: git reset --hard código_del_commit
+
+                
+        #----------Crear una rama----------
+        0. Consultar las ramas disponibles: git branch
+        git branch -a
+        1. Desde el editor crear una rama(branch) llamada "css":
+        git checkout -b nombre_de_la_rama   
+        2. Crear una carpeta de estilos "css" e incluir 
+        el archivo index.css 
+        3. Agregar la carpeta con: git add nombre_archivo o nombre carpeta
+        4. Hacer el commit: git commit -m "Comentario"
+        5. Para enviar archivos a una rama recién creada:
+        git push --set-upstream origin nombre_de_la_rama
+
+        #-----------------------
+        Si necesita eliminar rama: git checkout -d nombre_rama
+
+        ¿Cómo bajar los cambios agregados a una rama?
+        1. Desde consola descargar los cambios en el repositorio: git pull
+        2. Consultar las ramas disponibles (Veremos la nueva rama): git branch
+                     git branch -a 
+        3. Cambiar a la rama "nueva": git checkout nombre_rama
+        4. Hacer una modificación y verificar estatus: git status
+        5. Agregar los archivos modificados: git add .
+        6. Realizar el commit: git commit -m "Comentario"
+        7. Enviarlo al repositorio local: git push 
+
+
+        #---- Fork------
+        1. Fork al repositorio: https://github.com/CodoAlumnos/EJEMPLOS_CSS
+        Botón Fork (Deben estra logueados en su cuenta de GitHub)
+
+        # ---Clonar repositorio----
+        git clone url_del_repositorio
+
+        Unir rama a la principal----------
+        1. Cambiar a la rama principal: git checkout main
+        2. Aplicar merge para unir: git merge css (de la rama modificada)
+        3. Bajar los nuevos cambios: git pull
+        4. Enviar todo a la rama principal del repositorio: git push
+        5. Eliminar rama desde la versión web
+
+        # Crear rama desde la versión web------------
+        1. Desde GitHub en branch create new branch, asignar 
+        un nombre y create.
+        2.Descargar los cambios con git pull
+        3.Verificar que aparezca el nombre de la rama: git branch -a
+        4. Cambiar de rama: git checkout nombre_rama
+        5. Hacer alguna modificación al archivo
+        6. Agregarlo a repo local: git add .
+        7. Comentarlo: git commit -m "comentario"
+        8. Git push (Enviarlo al repo remoto)
+        9. Hacer un pull request desde la página para unir lo nuevo 
+        a la rama principal. 
+        --> 
