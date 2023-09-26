@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="../img/codoAcodo.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 </head>
 <body>
-    
+
+    <header>
+        <link rel="stylesheet" href="../CSS/estilos.css">
+        <nav class="header-linea">
+            <a class="menu" href="..\index.html">HOME</a>
+            <a class="menu" href="catalogo.html">BURGUERS</a>
+            <a class="menu" href="nosotros.html">NOSOTROS</a>
+            <a class="menu" href="sucursales.html">SUCURSALES</a>
+            <a class="menu" href="formulario.html">CONTACTO</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>CONTACTANOS!</h1>
+
+        <form action="tu_script_de_procesamiento.php" method="post">
+            <label for="nombre">Nombre<span>*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan" required>
+
+            <label for="mail">Correo Electrónico<span>*</span></label>
+            <input type="email" id="mail" name="mail"placeholder="Perez" required>
+
+            <label for="telefono">Número de Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="15 11 22 33 44">
+
+            <label for="asunto">Asunto del Mensaje</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Solicitud de informacion">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Me gustaria saber mas sobre..."></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer></footer>
+
 </body>
 </html>

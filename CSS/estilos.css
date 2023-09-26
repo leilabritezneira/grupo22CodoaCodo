@@ -20,7 +20,6 @@ header{
     font-family: sans-serif;
     position: fixed; 
     padding-left: 47.5vw;
-    
 }
 
 .contenido{
@@ -29,7 +28,6 @@ header{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-
 }
 
 .menu{
@@ -59,15 +57,11 @@ header{
     padding: 1vw;
     box-sizing: border-box; 
     /* overflow: auto; */
-
-
 }
 
 .img{
     width: 33vw;
     height: auto;
-  
-
 }
 
 /* h1{
