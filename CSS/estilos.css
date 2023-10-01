@@ -99,3 +99,63 @@ p{
 footer{
     background-color: black;
 }
+
+/* LEILA */
+
+.body {
+    background-image: url(../imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    padding: 50px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; 
+}
+
+h1 {
+    margin-top: 0;
+    color: rgba(255,153,51,1);
+    text-align: center;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+}
+
+label{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
+    padding: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: rgba(255,153,51,1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+input[type="submit"]:hover {
+    background-color: orange;
+}
