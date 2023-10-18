@@ -1,65 +1,66 @@
-@font-face{
-    font-family: "Urbanist";
-    src: url(../fonts/Urbanist/static/Urbanist-Medium.ttf);
-    /* font-family: "UrbanistLight";
+@font-face {
+  font-family: "Urbanist";
+  src: url(../fonts/Urbanist/static/Urbanist-Medium.ttf);
+  /* font-family: "UrbanistLight";
     src: url(../fonts/Urbanist/static/Urbanist-ExtraLight.ttf);
     font-family: "UrbanistBold";
     src: url(../fonts/Urbanist/static/Urbanist-Bold.ttf); */
 }
 
-*{
-    margin: 0%;
-    padding: 0;
+* {
+  margin: 0%;
+  padding: 0;
 }
 
-header{
-    background-color: black;
-    font-size: 1vw;
-    text-align: end;
-    font-family: sans-serif;
-    padding-left: 47.5vw;
+header {
+  background-color: black;
+  font-size: 1vw;
+  text-align: end;
+  font-family: sans-serif;
+  padding-left: 47.5vw;
 }
 
-.contenido{
-    background-color: #333;
-    background-image: url(../imagenes/fondo1.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+.menu {
+  text-decoration: none;
+  color: white;
+  padding-right: 1.5vw;
+  margin: 1vw;
+  font-family: "Urbanist";
 }
 
-.menu{
-    text-decoration: none;
-    color: white;
-    padding-right: 1.5vw;
-    margin: 1vw;
-    font-family: "Urbanist";
+.header-linea {
+  display: inline-block;
+  padding-right: 4vw;
+  padding-top: 5vh;
+  margin: 2vw;
 }
 
-.header-linea{
-    display:inline-block;
-    padding-right: 4vw;
-    padding-top: 5vh;
-    margin: 2vw;
-}
-.s1{
-    padding-top:3%;
-    margin: 3vw;
+.contenido {
+  background-color: #333;
+  background-image: url(../imagenes/fondo1.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
-#d1{
-    width: 35vw;
-    border-width: 0.2vw;
-    border-style: dashed;
-    border-color: #333;
-    padding: 1vw;
-    box-sizing: border-box; 
-    /* overflow: auto; */
+.s1 {
+  padding-top: 3%;
+  margin: 3vw;
 }
 
-.img{
-    width: 33vw;
-    height: auto;
+#d1 {
+  width: 35vw;
+  border-width: 0.2vw;
+  border-style: dashed;
+  border-color: #333;
+  padding: 1vw;
+  box-sizing: border-box;
+  /* overflow: auto; */
+}
+
+.img {
+  width: 33vw;
+  height: auto;
 }
 
 /* h1{
@@ -68,49 +69,179 @@ header{
     text-align: center;
     font-family: "Urbanist";
     position: relative;
-        width: 100vw;
+    width: 100vw;
     height: 10vh;
 } */
 
-h2{
-    color:rgba(255,153,51,1);
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-size: 2vw;
-    padding-right: 10vh;
-    padding: 1vw;
-    font-family: "Urbanist";
-    font-weight: 500;
+h2 {
+  color: rgba(255, 153, 51, 1);
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-size: 2vw;
+  padding-right: 10vh;
+  padding: 1vw;
+  font-family: "Urbanist";
+  font-weight: 500;
 }
 
-p{
-    color:white;
-    background-color: black;
-    margin-top: 1vw;
-    padding: 2vw;
-    width: 29vw;
-    height: 10vh;
-    font-family: "Urbanist";
-    font-size: 90%;
+p {
+  color: white;
+  background-color: black;
+  margin-top: 1vw;
+  padding: 2vw;
+  width: 29vw;
+  height: 10vh;
+  font-family: "Urbanist";
+  font-size: 90%;
 }
 
+/* CATALOGO - Fer*/
 
-/* Formulario de contacto - LEILA */
+.contenido-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 15vh;
+  padding-left: 10vw;
+  grid-gap: 10%;
+}
+
+.caja-B {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo semi transparente */
+  color: #fff;
+  text-align: center;
+  border: 1px solid rgba(255, 153, 51, 1);
+  max-width: 70rem;
+  margin-right: auto;
+  margin-left: auto;
+    
+}
+.caja-B img {
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px; 
+  transform: scale(1.4);
+}
+
+.caja-B p {
+  overflow: hidden;
+  width: 80%;
+  justify-content: flex-end;
+}
+
+/* NOSOTROS */
+
+.nosotros-section {
+  background-color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-section {
+  width: 50%;
+  margin: 0%;
+  padding-bottom: 1vh;
+}
+
+.nosotros-section h1 {
+  font-size: 150%;
+  text-align: left;
+  color: rgba(255, 153, 51, 1);
+  height: auto;
+  width: auto;
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 0%;
+
+}
+
+.nosotros-section p {
+  font-size: 80%;
+  width: auto;
+  height: auto;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-top: 0%;
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-bottom: 0%;
+  padding-bottom: 20%;
+  padding-top: 1%;
+}
+
+.imagen-section {
+  width: 50%;
+}
+
+.nosotros-section img {
+  width: 100%;
+  /* Hacer que la imagen ocupe todo el ancho de su contenedor */
+}
+
+.trabajar-con-nosotros {
+  position: relative;
+  text-align: center;
+  /*margin-top: 40px;*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trabajar-con-nosotros img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+
+}
+
+.superposicion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo semi transparente */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.superposicion h2 {
+  font-size: 32px;
+  margin: 0 0 10px;
+  color: rgba(255, 153, 51, 1);
+}
+
+.superposicion p {
+  font-size: 16px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para dispositivos móviles */
+}
+
+/* LEILA */
 
 .body {
-    background-image: url(../imagenes/fondo1.jpg);
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
+  background-image: url(../imagenes/fondo1.jpg);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 80%;
-    max-width: 600px;
-    padding: 50px;
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px auto; 
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
 }
 
 .contactanos-title {
@@ -120,16 +251,18 @@ p{
     font-family: "Urbanist";
 }
 
-label, input, textarea {
-    display: block;
-    width: 100%;
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
 }
 
-label{
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-family: "Urbanist";
+label {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Urbanist";
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="text"], textarea {
@@ -140,19 +273,79 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="text"], 
 }
 
 input[type="submit"] {
-    background-color: rgba(255,153,51,1);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 50px;
-    font-family: "Urbanist";
+  background-color: rgba(255, 153, 51, 1);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+  font-family: "Urbanist";
 }
 
 input[type="submit"]:hover {
-    background-color: orange;
+  background-color: orange;
 }
+
+/*****Sucursales********/
+
+.body-sucursal {
+  background-image: url(../imagenes/fondoSucursales.jpg);
+  background-size: 100%;
+}
+
+
+.grid-uno {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 5vw;
+  align-items: normal;
+}
+
+.grid-uno:hover {
+  box-shadow: 0 3px 12px 0 black;
+}
+
+.caja {
+  background-color: gray;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.10);
+  font-size: 1.5em;
+}
+
+.caja-1 {
+  grid-column: 1 / span 2;
+}
+
+.caja-2 {
+  grid-column: 1 / span 2;
+  background-color: #ff6600;
+  height: 30%;
+  padding-bottom: 2vh;
+}
+
+
+.caja-2 h2 {
+  color: #ff6600;
+  text-align: center;
+}
+
+
+
+.caja p {
+  font-size: 1.2vw;
+}
+
+.lista-sucursal {
+  list-style: none;
+  font-size: 2vw;
+}
+
+/********FIN DE SUCURSALES*************/
 
 /* Footer general */
 
