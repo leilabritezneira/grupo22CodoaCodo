@@ -58,16 +58,25 @@ h2 {
 
 /* CATALOGO - Fer*/
 
+.titulo-catalogo {
+  margin-top: 5vh;
+  text-align: center;
+  font-family: "Urbanist";
+  color: rgba(255, 153, 51, 1);
+  font-size: 4vw;
+}
+
 .contenido-galeria {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 15vh;
+  margin: 10% 10% 10% 0%;
   padding-left: 10vw;
   grid-gap: 10%;
 }
 
 .caja-B {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi transparente */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo semi transparente */
   color: #fff;
   text-align: center;
   border: 1px solid rgba(255, 153, 51, 1);
@@ -78,9 +87,13 @@ h2 {
 
 .caja-B img {
   border-radius: 50%;
-  width: 100px; 
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   transform: scale(1.4);
+}
+
+.caja-B:hover img {
+  transform: scale(2.5);
 }
 
 .caja-B p {
@@ -109,13 +122,15 @@ h2 {
 }
 
 .contactanos-title {
-    margin-top: 0;
-    color: rgba(255,153,51,1);
-    text-align: center;
-    font-family: "Urbanist";
+  margin-top: 0;
+  color: rgba(255, 153, 51, 1);
+  text-align: center;
+  font-family: "Urbanist";
 }
 
-label, input, textarea {
+label,
+input,
+textarea {
   display: block;
   width: 100%;
 }
@@ -127,11 +142,15 @@ label {
   font-family: "Urbanist";
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="text"], textarea {
-    padding: 10px 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: "Urbanist";
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Urbanist";
 }
 
 input[type="submit"] {
@@ -149,61 +168,42 @@ input[type="submit"]:hover {
   background-color: orange;
 }
 
-/*****Sucursales********/
+/*Sucursales*/
 
-.body-sucursal {
-  background-image: url(../imagenes/fondoSucursales.jpg);
-  background-size: 100%;
+.contenedor-f {
+  display: flex;
+  justify-content: flex-end;
+  width: 65%;
+  margin-bottom: 20px;
 }
 
-.grid-uno {
-  margin: 30px;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 5vw;
-  align-items: normal;
+.mapa {
+  min-height: 100px;
+  flex-shrink: 0;
+  align-self: center;
+  order: 2;
 }
 
-.grid-uno:hover {
-  box-shadow: 0 3px 12px 0 black;
-}
-
-.caja {
-  background-color: gray;
+.datos {
+  font-family: "Urbanist";
+  background-color: beige;
   text-align: center;
-  border: 2px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.10);
-  font-size: 1.5em;
+  margin-left: 15%;
+  border-radius: 10% 0% 0% 10%;
 }
 
-.caja-1 {
-  grid-column: 1 / span 2;
+.datos h2 {
+  margin-bottom: 50px;
 }
 
-.caja-2 {
-  grid-column: 1 / span 2;
-  background-color: #ff6600;
-  height: 30%;
-  padding-bottom: 2vh;
+.datos h3 {
+  margin-bottom: 5px;
 }
 
-.caja-2 h2 {
-  color: #ff6600;
-  text-align: center;
-}
-
-.caja p {
-  font-size: 1.2vw;
-}
-
-.lista-sucursal {
+.lista-sucursal li {
   list-style: none;
-  font-size: 2vw;
+  margin-top: 10%;
 }
-
-/********FIN DE SUCURSALES*************/
 
 /* Footer general */
 
@@ -219,7 +219,7 @@ footer {
 footer ul {
   font-family: "Urbanist";
   list-style: none;
-  display: flex; 
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -238,181 +238,183 @@ footer a {
 /* CSS de la ventana Nosotros -  Carloh */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  
-  header {
-    background-color: #000000;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    font-family: "Urbanist";
-  }
-  
-  .logo img {
-    max-width: 15%;
-    height: auto;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
-  .logo {
-    padding: 0px 15px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-    font-size: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  a {
-    transition: color 0.3s ease-in-out;
-  }
-  
-  a:hover {
-    color: rgba(255, 153, 51, 1); /* Cambia el color al pasar el ratón por encima */
-  }
-  
-  .social-media {
-    display: flex;
-  }
-  
-  .social-media a {
-    margin-right: 10px;
-  }
-  
-  .social-media a img {
-    width: 30px;
-    height: 30px;  
-  }
-  
-  .nosotros-section {
-    background-color: #333;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+header {
+  background-color: #000000;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Urbanist";
+}
 
-  .texto-section {
-    width: 50%;
-    margin: 0%;
-  }
-  
-  .nosotros-section h1 {
-    font-size: 25px;
-    text-align: left;
-    color: rgba(255, 153, 51, 1);
-    height: auto;
-    width: auto;
-    margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  
-  .nosotros-section p {
-    font-size: 14px;
-    width: auto;
-    height: auto;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    margin-top: 0%;
-    margin-left: 20%;
-    margin-right: 10%;
-    margin-bottom: 0%;
-    padding-top: 1%;
-  }
-  
-  .imagen-section {
-    width: 50%;
-  }
-  
-  .nosotros-section img {
-    width: 100%; /* Hacer que la imagen ocupe todo el ancho de su contenedor */
-  }
-  
-  .trabajar-con-nosotros {
-    position: relative;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .trabajar-con-nosotros img {
-    width: 100%;
-    height: auto; 
-    margin-bottom: 20px;
-    display: flex;
-  }
-  
-  .superposicion {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi transparente */
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .superposicion h2 {
-    font-size: 32px;
-    margin: 0 0 10px;
-    color: rgba(255, 153, 51, 1);
-  }
-  
-  .superposicion p {
-    font-size: 16px;
-    margin: 0;
-    padding: 0px 15rem;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  footer ul {
-    list-style: none;
-    display: flex; 
-    margin: 0;
-    padding: 0;
-  }
-  
-  footer ul li {
-    margin-right: 20px;
-  }
-  
-  footer a {
-    text-decoration: none;
-    font-size: 20px;
-    color: rgba(255, 153, 51, 1);
-  }
-  
-  @media screen and (max-width: 768px) {
-    /* Estilos para dispositivos móviles */
-  }
-  
+.logo img {
+  max-width: 15%;
+  height: auto;
+}
+
+.logo {
+  padding: 0px 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: rgba(255, 153, 51, 1);
+  /* Cambia el color al pasar el ratón por encima */
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+}
+
+.nosotros-section {
+  background-color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-section {
+  width: 50%;
+  margin: 0%;
+}
+
+.nosotros-section h1 {
+  font-size: 25px;
+  text-align: left;
+  color: rgba(255, 153, 51, 1);
+  height: auto;
+  width: auto;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.nosotros-section p {
+  font-size: 14px;
+  width: auto;
+  height: auto;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-top: 0%;
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-bottom: 0%;
+  padding-top: 1%;
+}
+
+.imagen-section {
+  width: 50%;
+}
+
+.nosotros-section img {
+  width: 100%;
+  /* Hacer que la imagen ocupe todo el ancho de su contenedor */
+}
+
+.trabajar-con-nosotros {
+  position: relative;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trabajar-con-nosotros img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.superposicion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo semi transparente */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.superposicion h2 {
+  font-size: 32px;
+  margin: 0 0 10px;
+  color: rgba(255, 153, 51, 1);
+}
+
+.superposicion p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0px 15rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin-right: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(255, 153, 51, 1);
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para dispositivos móviles */
+}
