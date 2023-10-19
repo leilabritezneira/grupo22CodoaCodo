@@ -102,7 +102,7 @@ h2 {
   justify-content: flex-end;
 }
 
-/* FORMULARIO - LEILA */
+/* FORMULARIO - Leila */
 
 .body {
   background-image: url(../imagenes/fondo1.jpg);
@@ -128,9 +128,7 @@ h2 {
   font-family: "Urbanist";
 }
 
-label,
-input,
-textarea {
+label, input, textarea {
   display: block;
   width: 100%;
 }
@@ -142,11 +140,7 @@ label {
   font-family: "Urbanist";
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="text"],
-textarea {
+input[type="text"], input[type="email"], input[type="tel"], input[type="text"], textarea {
   padding: 10px 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -168,7 +162,7 @@ input[type="submit"]:hover {
   background-color: orange;
 }
 
-/*Sucursales*/
+/* Sucursales */
 
 .contenedor-f {
   display: flex;
@@ -203,6 +197,10 @@ input[type="submit"]:hover {
 .lista-sucursal li {
   list-style: none;
   margin-top: 10%;
+}
+
+ul.lista-sucursal {
+  padding: 5px;
 }
 
 /* Footer general */
@@ -285,8 +283,7 @@ a {
 }
 
 a:hover {
-  color: rgba(255, 153, 51, 1);
-  /* Cambia el color al pasar el ratón por encima */
+  color: rgba(255, 153, 51, 1); /* Cambia el color al pasar el ratón por encima */
 }
 
 .social-media {
@@ -344,8 +341,7 @@ a:hover {
 }
 
 .nosotros-section img {
-  width: 100%;
-  /* Hacer que la imagen ocupe todo el ancho de su contenedor */
+  width: 100%; /* Hacer que la imagen ocupe todo el ancho de su contenedor */
 }
 
 .trabajar-con-nosotros {
@@ -358,7 +354,6 @@ a:hover {
 .trabajar-con-nosotros img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
   display: flex;
 }
 
