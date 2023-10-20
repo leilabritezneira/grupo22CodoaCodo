@@ -1,124 +1,121 @@
-
-@font-face{
-    font-family: "Urbanist";
-    src: url(../fonts/Urbanist/static/Urbanist-Medium.ttf);
-    /* font-family: "UrbanistLight";
+@font-face {
+  font-family: "Urbanist";
+  src: url(../fonts/Urbanist/static/Urbanist-Medium.ttf);
+  /* font-family: "UrbanistLight";
     src: url(../fonts/Urbanist/static/Urbanist-ExtraLight.ttf);
     font-family: "UrbanistBold";
     src: url(../fonts/Urbanist/static/Urbanist-Bold.ttf); */
 }
 
-*{
-    margin: 0%;
-    padding: 0;
+* {
+  margin: 0%;
+  padding: 0;
 }
 
-header{
-    background-color: black;
-    font-size: 1vw;
-    text-align: end;
-    font-family: sans-serif;
-    padding-left: 47.5vw;
+.contenido {
+  background-color: #333;
+  background-image: url(../imagenes/fondo1.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
-.contenido{
-    background-color: #333;
-    background-image: url(../imagenes/fondo1.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+.s1 {
+  padding-top: 3%;
+  margin: 3vw;
 }
 
-.menu{
-    text-decoration: none;
-    color: white;
-    padding-right: 1.5vw;
-    margin: 1vw;
-    font-family: "Urbanist";
+#d1 {
+  width: 35vw;
+  border-width: 0.2vw;
+  border-style: dashed;
+  border-color: #333;
+  padding: 1vw;
+  box-sizing: border-box;
 }
 
-.header-linea{
-    display:inline-block;
-    padding-right: 4vw;
-    padding-top: 5vh;
-    margin: 2vw;
-}
-.s1{
-    padding-top:3%;
-    margin: 3vw;
+.img {
+  width: 33vw;
+  height: auto;
 }
 
-#d1{
-    width: 35vw;
-    border-width: 0.2vw;
-    border-style: dashed;
-    border-color: #333;
-    padding: 1vw;
-    box-sizing: border-box; 
-    /* overflow: auto; */
+h2 {
+  color: rgba(255, 153, 51, 1);
+  font-size: 2vw;
+  padding-right: 10vh;
+  padding: 1vw;
+  font-family: "Urbanist";
+  font-weight: 500;
 }
 
-.img{
-    width: 33vw;
-    height: auto;
+.caja-B p {
+  color: white;
+  margin-top: 1vw;
+  padding: 2vw;
+  font-family: "Urbanist";
+  font-size: 90%;
 }
 
-/* h1{
-    color: rgba(204,51,0,1);
-    font-size: 3vw;
-    text-align: center;
-    font-family: "Urbanist";
-    position: relative;
-        width: 100vw;
-    height: 10vh;
-} */
+/* CATALOGO - Fer*/
 
-h2{
-    color:rgba(255,153,51,1);
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-size: 2vw;
-    padding-right: 10vh;
-    padding: 1vw;
-    font-family: "Urbanist";
-    font-weight: 500;
+.contenido-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 15vh;
+  padding-left: 10vw;
+  grid-gap: 10%;
 }
 
-p{
-    color:white;
-    background-color: black;
-    margin-top: 1vw;
-    padding: 2vw;
-    width: 29vw;
-    height: 10vh;
-    font-family: "Urbanist";
-    font-size: 90%;
+.caja-B {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi transparente */
+  color: #fff;
+  text-align: center;
+  border: 1px solid rgba(255, 153, 51, 1);
+  max-width: 70rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-
-footer{
-    background-color: black;
+.caja-B img {
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px; 
+  transform: scale(1.4);
 }
 
-/* LEILA */
+.caja-B p {
+  overflow: hidden;
+  width: 80%;
+  justify-content: flex-end;
+}
+
+/* FORMULARIO - LEILA */
 
 .body {
-    background-image: url(../imagenes/fondo1.jpg);
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
+  background-image: url(../imagenes/fondo1.jpg);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
+
+.titulo-burguers{
+  color: #ff6600;
+  text-align: center;
+  margin-top: 4vh;
+}
+
 
 .container {
-    width: 80%;
-    max-width: 600px;
-    padding: 50px;
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 20px auto; 
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
 }
 
-h1 {
+.contactanos-title {
     margin-top: 0;
     color: rgba(255,153,51,1);
     text-align: center;
@@ -126,22 +123,18 @@ h1 {
 }
 
 label, input, textarea {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
-label{
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-family: "Urbanist";
+label {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Urbanist";
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="text"],
-textarea {
+input[type="text"], input[type="email"], input[type="tel"], input[type="text"], textarea {
     padding: 10px 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -149,16 +142,609 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: rgba(255,153,51,1);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 50px;
-    font-family: "Urbanist";
+  background-color: rgba(255, 153, 51, 1);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+  font-family: "Urbanist";
 }
 
 input[type="submit"]:hover {
-    background-color: orange;
+  background-color: orange;
+}
+
+/*****Sucursales********/
+
+.body-sucursal {
+  background-image: url(../imagenes/fondoSucursales.jpg);
+  background-size: 100%;
+}
+
+.grid-uno {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 5vw;
+  align-items: normal;
+}
+
+.grid-uno:hover {
+  box-shadow: 0 3px 12px 0 black;
+}
+
+.caja {
+  background-color: gray;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.10);
+  font-size: 1.5em;
+}
+
+.caja-1 {
+  grid-column: 1 / span 2;
+}
+
+.caja-2 {
+  grid-column: 1 / span 2;
+  background-color: #ff6600;
+  height: 30%;
+  padding-bottom: 2vh;
+}
+
+.caja-2 h2 {
+  color: #ff6600;
+  text-align: center;
+}
+
+.caja p {
+  font-size: 1.2vw;
+}
+
+.lista-sucursal {
+  list-style: none;
+  font-size: 2vw;
+}
+
+/********FIN DE SUCURSALES*************/
+
+/* Footer general */
+
+footer {
+  background-color: #333;
+  color: #fff !important;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  font-family: "Urbanist";
+  list-style: none;
+  display: flex; 
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin-right: 20px;
+}
+
+footer a {
+  font-family: "Urbanist";
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(255, 153, 51, 1);
+}
+
+/* CSS de la ventana Nosotros -  Carloh */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  header {
+    background-color: #000000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Urbanist";
+  }
+  
+  .logo img {
+    max-width: 15%;
+    height: auto;
+  }
+
+  .logo {
+    padding: 0px 15px;
+  }
+  
+  .pnav{
+    padding: 0%;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  a {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: rgba(255, 153, 51, 1); /* Cambia el color al pasar el ratón por encima */
+  }
+  
+  .social-media {
+    display: flex;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .social-media a img {
+    width: 30px;
+    height: 30px;  
+  }
+  
+  .nosotros-section {
+    background-color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .texto-section {
+    width: 50%;
+    margin: 0%;
+  }
+  
+  .nosotros-section h1 {
+    font-size: 25px;
+    text-align: left;
+    color: rgba(255, 153, 51, 1);
+    height: auto;
+    width: auto;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .nosotros-section p {
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-bottom: 0%;
+    padding-top: 1%;
+  }
+  
+  .imagen-section {
+    width: 50%;
+  }
+  
+  .nosotros-section img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho de su contenedor */
+  }
+  
+  .trabajar-con-nosotros {
+    position: relative;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .trabajar-con-nosotros img {
+    width: 100%;
+    height: auto; 
+    margin-bottom: 20px;
+    display: flex;
+  }
+  
+  .superposicion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi transparente */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .superposicion h2 {
+    font-size: 32px;
+    margin: 0 0 10px;
+    color: rgba(255, 153, 51, 1);
+  }
+  
+  .superposicion p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0px 15rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-right: 20px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255, 153, 51, 1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+  }
+  
+
+/* ------------------------------------------------------- */
+                    /* HOME - JAVIER */
+/* ------------------------------------------------------- */
+
+#header_scroll{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.322);
+  margin: 0%;
+  padding: 0vh; 
+  /* width: 97.2vw; */
+}
+
+/* #header_scroll nav { */
+  /* padding-top: 2vh; */
+  /* margin: 1.5vw; */
+
+/* } */
+
+.body_home{
+  background-color: black;
+  /* width: auto; */
+}
+
+
+h3 {
+  color: #fff;
+}
+
+/* main {
+  box-sizing: border-box;
+} */
+
+.banner {
+  width: auto;
+  height: 50vw;    
+  overflow: hidden;
+}
+
+.banner ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.banner li {
+  width: 100%;
+  list-style: none;
+}
+
+.banner img {
+  width: 100%;
+  height: 50vw;
+  padding-top: 0%;
+}
+
+@keyframes slide {
+  0% {margin-left: 0%;}
+  20% {margin-left: 0%;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+
+.central{
+  /* border: 2px solid orangered; */
+  margin: 5%;
+  height: 60vh;
+  width: auto;
+  /* overflow: hidden; */
+  display: grid;
+  grid-template-columns: 40vw 42.3vw;
+  gap: 6vw;
+  
+}
+
+.hamburguesa{
+  display: grid;
+  gap: 1vh; 
+  grid-template-rows: 24vh 17vh 15vh;
+}
+
+.hamburguesa-arriba{
+
+  border-bottom: 1px solid rgb(255, 83, 3);
+  border-top: 1px solid rgb(255, 83, 3);
+  border-width: 1vw;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+.hamburguesa-arriba p{
+  width: 40vw;
+  height: 16vh;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: orangered;
+  background-color: transparent;
+}
+
+.hamburguesa-medio{
+  
+  border-bottom: 0.3px solid rgb(253, 8, 8); 
+  border-top: 0.3px solid rgb(255, 3, 3);
+  border-width: 1vw;
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+  border-top-right-radius: 10vw;
+  border-top-left-radius: 10vw; 
+  
+  border: 9px solid rgb(255, 3, 3);
+  border-radius: 50vh;
+ 
+}
+
+.hamburguesa-medio p{
+  width: 40vw;
+  height: 13.77vh;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  background-color: transparent;
+}
+
+.hamburguesa-abajo{
+
+  border-bottom: 1px solid rgb(255, 83, 3);
+  border-top: 1px solid rgb(255, 83, 3);
+  border-width: 1vw;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+
+}
+
+.hamburguesa-abajo p{
+  width: 40vw;
+  height: 12vh;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: orangered;
+  background-color: transparent;
+}
+
+.texto-hamburguesa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 3px solid rgb(253, 195, 4); */
+}
+
+.texto-hamburguesa h2{
+  height: auto;
+  width: 30;
+  font-size: 2.9vw;
+  color: rgb(252, 173, 4); 
+  background-color: transparent;
+  padding: 1vw;
+  padding-top: 15vh;  
+  /* display: flex; */
+}
+
+.parrafo-hamburguesa{
+  width: auto;
+  height: 30vh;
+  margin: 0%;
+  color:white;
+  background-color: transparent;
+  padding: 2vw;
+  font-family: "Urbanist";
+  /* font-size: 150%; */
+}
+
+.texto-hamburguesa a{
+  text-decoration: none;
+  font-family: "Urbanist";
+  /* font-size: 120%; */
+  color: black;
+  font-weight: 1200;
+  font-size:x-large;
+  text-align: center;
+  padding: 2% 8% 2% 8%;
+  border-radius: 5vh;
+  border: 3px solid rgb(253, 195, 4);
+  position: absolute;
+  left: 6vw;
+  top:155vh;
+  background-color: orangered;
+}
+
+.sucursales{
+  width: auto;
+  height: 100vh; 
+  display: grid;
+  grid-template-columns:49.4vw 49.5vw;
+
+}
+
+.sucursales h1{
+  color: white;
+}
+
+.div1{
+  background-image: url(../imagenes/13570605_Handrawn_Burguer_Elements_Collection.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size:large;
+
+}
+
+.div2{
+  background-image: url(../imagenes/abstract-blur-restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size:large;
+}
+
+.div1 div{
+  background-color: rgba(255, 123, 0, 0.808);
+  border: 3px solid rgb(255, 0, 0);
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1 a{
+  color: #ccc;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  /* margin: 5vh; */
+  background-color: black;
+  border-radius: 5vh;
+  width: 20vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.div2 div{
+  background-color: rgba(0, 0, 0, 0.425);
+  border: 3px solid orangered;
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.div2 a{
+  color: #cccccc;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  background-color: black;
+  border-radius: 5vh;
+  width: 20vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:0px){
+
+  .banner {
+      width: 425px;
+  }
+
+
 }

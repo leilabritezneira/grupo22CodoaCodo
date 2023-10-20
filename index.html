@@ -4,54 +4,174 @@
     <link rel="icon" href="img/codoAcodo.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>CODO BURGUER</title>
+    <script>
+        //CONSULTA A API DE POQUEMON: 
+        const apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Lista de Pokémon:', data.results);
+            })
+            .catch(error => {
+                console.error('Error al obtener la lista de Pokémon:', error.message);
+            });
+
+    </script>
 </head>
-<body>
-    <header>
-        <link rel="stylesheet" href="CSS/estilos.css">
+<body class="body_home">
 
-        <nav class="header-linea">
-            <a class="menu" href="index.html">HOME</a>
-            <a class="menu" href="templates/nosotros.html">NOSOTROS</a>
-            <a class="menu" href="templates/catalogo.html">CATÁLOGO</a>
-            <a class="menu" href="templates/sucursales.html">SUCURSALES</a>
-            <a class="menu" href="templates/formulario.html">CONTACTO</a>
+    <header id="header_scroll">
+        <div class="logo">
+            <img src="../imagenes/burger-logo7.png" alt="Logo de CodoBurger">
+        </div>
+        <nav class="pnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/templates/nosotros.html">Nosotros</a></li>
+                <li><a href="/templates/catalogo.html">Catálogo</a></li>
+                <li><a href="/templates/formulario.html">Contacto</a></li>
+                <li><a href="/templates/sucursales.html">Sucursales</a></li>
+            </ul>
         </nav>
-
+        <div class="social-media">
+            <a href="#"><img src="../imagenes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../imagenes/linkedin.png" alt="LinkedIn"></a>
+        </div>
     </header>
 
     <main> 
+        
+        <div class="banner">
+            <ul>
+                <li>
+                    <img src="imagenes/Banner web horizontal Con marca Decoración de interiores  delicado colores cálidos.png" alt="">
+                    <!-- <div class="texto"> 
+                        <h2>IMAGEN 1</h2>
+                    </div> -->
+                </li>
+                <li>
+                    <img src="imagenes/8289513_3864564.png" alt="">
+                    <!-- <div class="texto"> 
+                        <h2>IMAGEN 2</h2>
+                    </div> -->
+                </li>
+                <li>
+                    <img src="imagenes/Banner web horizontal.png" alt="">
+                    <!-- <div class="texto"> 
+                        <h2>IMAGEN 3</h2>
+                    </div> -->
+                </li>
+                <li>
+                    <img src="imagenes/Banner web horizontal parrilla.png" alt="" >
+                    <!-- <div class="texto"> 
+                        <h2>IMAGEN 4</h2>
+                    </div> -->
+                </li>
+            </ul>
+        </div>
+        
 
-        <div>
-            <img src="imagenes/codoBurger-img.png" width="100%" alt="">
+        <!-- <section id="caja_banner">
+            <div >
+                <h1 id="titulo">CODO BURGUER</h1>
+                <h3 id="lema">HAMBURGUESAS CON ESTILO</h3>
+            </div>
+
+        </section> -->
+
+
+        <div class="central">
+
+            <!-- <img src="imagenes/13570605_Handrawn_Burguer_Elements_Collection.jpg" alt=""> -->
+
+            <div class="texto-hamburguesa">
+
+                <h2>NUESTRAS BURGUERS</h2>
+
+                <p class="parrafo-hamburguesa">Nuestros productos son creados y desarrollados en casa. Ese es nuestro diferencial.</p>
+
+                <a href="templates/catalogo.html">VER MENÚ</a>
+
+            </div>
+            
+            <div class="hamburguesa">
+                
+                <div class="hamburguesa-arriba">
+                
+                    <!-- <p>Lorem ipsum   dolor sit amet consectetur adipisicing elit.</p> -->
+                
+                </div>
+
+                <div class="hamburguesa-medio">
+                    
+                    <!-- <p>Lorem ipsum dolor  sit amet consectetur adipisicing elit.</p> -->
+                
+                </div>
+
+                <div class="hamburguesa-abajo">
+                
+                    <!-- <p>Lorem ipsum dolor  sit amet consectetur adipisicing elit.</p> -->
+                
+                </div>
+            
+            </div>
+            
+
         </div>
 
-        <div>
-            <h2>CATALOGO</h2>
-            <img src="" alt="">
-        </div>
+        <section class="sucursales">
 
-        <div>
-            <h2>SUCURSALES</h2>
-            <img src="" alt="">
-        </div>
+            <div class="div1">
 
-        <div>
-            <h2>NOSOTROS</h2>
-        </div>
+                <div>
+
+                   <h1>NOSOTROS</h1>
+
+                   <a href="templates/nosotros.html">CONOCENOS</a>
+
+                </div>                
+
+            </div>
+
+            <div class="div2">
+                <div>
+
+                    <h1>SUCURSALES</h1>
+
+                    <a href="templates/sucursales.html">VER MÁS</a>
+
+                </div>
+
+            </div>
+        
+        </section>
+        
+        
+
+        <!-- <div>
+            <h2>CONTACTO</h2> 
+        </div> -->
 
 
     </main>
 
     <footer>
-        <h1>CODO BURGUER</h1>
-
-        <h2>Info</h2>
-
-        <h3>Productos</h3>
-        <h3>Nosotros</h3>
-        <h3>Sucursales</h3>
-        <h3>Contacto</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="templates/nosotros.html">Nosotros</a></li>
+            <li><a href="templates/catalogo.html">Catálogo</a></li>
+            <li><a href="templates/formulario.html">Contacto</a></li>
+            <li><a href="templates/sucursales.html">Sucursales</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#"><img src="../imagenes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../imagenes/linkedin.png" alt="LinkedIn"></a>
+        </div>
     </footer>
 
 </body>
