@@ -387,32 +387,6 @@ a:hover {
   padding: 0px 15rem;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-footer ul li {
-  margin-right: 20px;
-}
-
-footer a {
-  text-decoration: none;
-  font-size: 20px;
-  color: rgba(255, 153, 51, 1);
-}
-
 @media screen and (max-width: 768px) {
 /* Estilos para dispositivos móviles */
 }
