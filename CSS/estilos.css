@@ -110,6 +110,12 @@ h2 {
   padding: 0;
 }
 
+.titulo-burguers{
+  color: #ff6600;
+  text-align: center;
+  margin-top: 4vh;
+}
+
 .container {
   width: 80%;
   max-width: 600px;
@@ -140,10 +146,10 @@ label {
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="text"], textarea {
-  padding: 10px 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: "Urbanist";
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Urbanist";
 }
 
 input[type="submit"] {
@@ -409,4 +415,298 @@ footer a {
 
 @media screen and (max-width: 768px) {
 /* Estilos para dispositivos móviles */
+}
+
+/* ------------------------------------------------------- */
+                    /* HOME - JAVIER */
+/* ------------------------------------------------------- */
+
+#header_scroll{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.322);
+  margin: 0%;
+  padding: 0vh; 
+  /* width: 97.2vw; */
+}
+
+/* #header_scroll nav { */
+  /* padding-top: 2vh; */
+  /* margin: 1.5vw; */
+
+/* } */
+
+.body_home{
+  background-color: black;
+  /* width: auto; */
+}
+
+h3 {
+  color: #fff;
+}
+
+/* main {
+  box-sizing: border-box;
+} */
+
+.banner {
+  width: auto;
+  height: 50vw;    
+  overflow: hidden;
+}
+
+.banner ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.banner li {
+  width: 100%;
+  list-style: none;
+}
+
+.banner img {
+  width: 100%;
+  height: 50vw;
+  padding-top: 0%;
+}
+
+@keyframes slide {
+  0% {margin-left: 0%;}
+  20% {margin-left: 0%;}
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+.central{
+  /* border: 2px solid orangered; */
+  margin: 5%;
+  height: 60vh;
+  width: auto;
+  /* overflow: hidden; */
+  display: grid;
+  grid-template-columns: 40vw 42.3vw;
+  gap: 6vw;
+}
+
+.hamburguesa{
+  display: grid;
+  gap: 1vh; 
+  grid-template-rows: 24vh 17vh 15vh;
+}
+
+.hamburguesa-arriba{
+  border-bottom: 1px solid rgb(255, 83, 3);
+  border-top: 1px solid rgb(255, 83, 3);
+  border-width: 1vw;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+.hamburguesa-arriba p{
+  width: 40vw;
+  height: 16vh;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: orangered;
+  background-color: transparent;
+}
+
+.hamburguesa-medio{
+  
+  border-bottom: 0.3px solid rgb(253, 8, 8); 
+  border-top: 0.3px solid rgb(255, 3, 3);
+  border-width: 1vw;
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+  border-top-right-radius: 10vw;
+  border-top-left-radius: 10vw; 
+  border: 9px solid rgb(255, 3, 3);
+  border-radius: 50vh;
+}
+
+.hamburguesa-medio p{
+  width: 40vw;
+  height: 13.77vh;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  background-color: transparent;
+}
+
+.hamburguesa-abajo{
+  border-bottom: 1px solid rgb(255, 83, 3);
+  border-top: 1px solid rgb(255, 83, 3);
+  border-width: 1vw;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+.hamburguesa-abajo p{
+  width: 40vw;
+  height: 12vh;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: orangered;
+  background-color: transparent;
+}
+
+.texto-hamburguesa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 3px solid rgb(253, 195, 4); */
+}
+
+.texto-hamburguesa h2{
+  height: auto;
+  width: 30;
+  font-size: 2.9vw;
+  color: rgb(252, 173, 4); 
+  background-color: transparent;
+  padding: 1vw;
+  padding-top: 15vh;  
+  /* display: flex; */
+}
+
+.parrafo-hamburguesa{
+  width: auto;
+  height: 30vh;
+  margin: 0%;
+  color:white;
+  background-color: transparent;
+  padding: 2vw;
+  font-family: "Urbanist";
+  /* font-size: 150%; */
+}
+
+.texto-hamburguesa a{
+  text-decoration: none;
+  font-family: "Urbanist";
+  /* font-size: 120%; */
+  color: black;
+  font-weight: 1200;
+  font-size:x-large;
+  text-align: center;
+  padding: 2% 8% 2% 8%;
+  border-radius: 5vh;
+  border: 3px solid rgb(253, 195, 4);
+  position: absolute;
+  left: 6vw;
+  top:155vh;
+  background-color: orangered;
+}
+
+.sucursales{
+  width: auto;
+  height: 100vh; 
+  display: grid;
+  grid-template-columns:49.4vw 49.5vw;
+}
+
+.sucursales h1{
+  color: white;
+}
+
+.div1{
+  background-image: url(../imagenes/13570605_Handrawn_Burguer_Elements_Collection.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size:large;
+}
+
+.div2{
+  background-image: url(../imagenes/abstract-blur-restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size:large;
+}
+
+.div1 div{
+  background-color: rgba(255, 123, 0, 0.808);
+  border: 3px solid rgb(255, 0, 0);
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1 a{
+  color: #ccc;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  /* margin: 5vh; */
+  background-color: black;
+  border-radius: 5vh;
+  width: 20vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.div2 div{
+  background-color: rgba(0, 0, 0, 0.425);
+  border: 3px solid orangered;
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.div2 a{
+  color: #cccccc;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  background-color: black;
+  border-radius: 5vh;
+  width: 20vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width:0px){
+  .banner {
+      width: 425px;
+  }
 }
