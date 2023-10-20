@@ -1,25 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="img/codoAcodo.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/estilos.css">
     <title>Home</title>
-    <script>
-        //CONSULTA A API DE POKEMON: 
-        const apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
-
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                console.log('Lista de Pokémon:', data.results);
-            })
-            .catch(error => {
-                console.error('Error al obtener la lista de Pokémon:', error.message);
-            });
-
-    </script>
 </head>
 <body>
     <header>

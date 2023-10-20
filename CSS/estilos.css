@@ -75,8 +75,7 @@ h2 {
 }
 
 .caja-B {
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Fondo semi transparente */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi transparente */
   color: #fff;
   text-align: center;
   border: 1px solid rgba(255, 153, 51, 1);
@@ -207,7 +206,6 @@ ul.lista-sucursal {
 
 footer {
   background-color: #333;
-  color: #fff !important;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
@@ -363,8 +361,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Fondo semi transparente */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi transparente */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -411,5 +408,5 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  /* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles */
 }
