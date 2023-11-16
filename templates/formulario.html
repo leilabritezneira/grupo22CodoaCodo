@@ -9,12 +9,20 @@
         function validarFormulario() {
             var nombre = document.getElementById("nombre").value;
             var mail = document.getElementById("mail").value;
-            
-            if (nombre === "" || mail === "") {
+
+            // Verificar si los campos obligatorios están vacíos
+            if (nombre.trim() === "" || mail.trim() === "") {
                 alert("Los campos Nombre y Correo Electrónico son obligatorios.");
                 return false;
             }
-            
+
+            // Verificar el formato del correo electrónico
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(mail)) {
+                alert("Ingrese una dirección de correo electrónico válida.");
+                return false;
+            }
+
             return true;
         }
     </script>
