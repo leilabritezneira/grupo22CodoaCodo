@@ -4,28 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <title>Contacto</title>
-    <script>
-        function validarFormulario() {
-            var nombre = document.getElementById("nombre").value;
-            var mail = document.getElementById("mail").value;
-
-            // Verificar si los campos obligatorios están vacíos
-            if (nombre.trim() === "" || mail.trim() === "") {
-                alert("Los campos Nombre y Correo Electrónico son obligatorios.");
-                return false;
-            }
-
-            // Verificar el formato del correo electrónico
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(mail)) {
-                alert("Ingrese una dirección de correo electrónico válida.");
-                return false;
-            }
-
-            return true;
-        }
-    </script>
 </head>
 
 <header>
@@ -48,28 +28,36 @@
     </div>
 </header>
 
-<body class="body"></body>>
+<body :class="{ 'modal-open': mostrarModal }" class="body">
+    <div id="app">
     <main class="container">
         <h1 class="contactanos-title">CONTACTANOS!</h1>
 
-        <form action="#" method="post" onsubmit="return validarFormulario();">
-            <label for="nombre">Nombre<span>*</span></label>
-            <input type="text" id="nombre" name="nombre" placeholder="Juan" required>
+        <form>
+            <label for="nombre">Nombre y apellido<span>*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" required v-model="nombre">
+            <div v-if="nameError" class="error"> Este campo es obligatorio!</div>
 
             <label for="mail">Correo Electrónico<span>*</span></label>
-            <input type="email" id="mail" name="mail" placeholder="Perez" required>
+            <input type="email" id="mail" name="mail" placeholder="juan.perez@gmail.com" required v-model="mail">
+            <div v-if="emailError" class="error"> Este campo es obligatorio!</div>
+            <div v-if="emailFormatError" class="error"> Ingrese una dirección de correo electrónico válida!</div>
 
             <label for="telefono">Número de Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="15 11 22 33 44">
+            <input type="tel" id="telefono" name="telefono" placeholder="15 11 22 33 44" v-model="telefono">
 
             <label for="asunto">Asunto del Mensaje</label>
-            <input type="text" id="asunto" name="asunto" placeholder="Solicitud de informacion">
+            <input type="text" id="asunto" name="asunto" placeholder="Solicitud de informacion" v-model="asunto">
 
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Me gustaria saber mas sobre..."></textarea>
+            <textarea id="mensaje" name="mensaje" placeholder="Me gustaria saber mas sobre..." v-model="mensaje"></textarea>
 
-            <input type="submit" value="Enviar">
+            <button class="submit" type="submit" @click="enviarFormulario">Enviar</button>
         </form>
+        <div class="modal-background" :class="{ 'active': mostrarModal }"  @click="mostrarModal = false"></div>
+        <div class="modal" :class="{ 'active': mostrarModal }" @click="mostrarModal = false">
+            <p> Gracias por comunicarte con nosotros <strong>{{nombre}}</strong>, <br> En breve te contestaremos!</p>
+        </div>
     </main>
 
     <footer>
@@ -86,5 +74,50 @@
             <a href="#"><img src="../imagenes/linkedin.png" alt="LinkedIn"></a>
         </div>
     </footer>
+</div>
 </body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            mostrarModal: false,
+            nameError: false,
+            emailError: false,
+            emailFormatError: false,
+            nombre: '',
+            mail: '',
+            telefono: '',
+            asunto: '',
+            mensaje: ''
+        },
+        methods: {
+            enviarFormulario() {
+                // Validación del formulario
+                if (this.validarFormulario()) {
+                    // Mostrar el modal si la validación es exitosa
+                    this.mostrarModal = true;
+                }
+            },
+            validarFormulario() {
+
+                if (this.nombre.trim() === "" ){
+                    this.nameError = true;
+                    return false;
+
+                } else if (this.mail.trim() === "") { 
+                    this.emailError = true;
+                    return false;
+                }
+
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(this.mail)) {
+                    this.emailFormatError = true
+                    return false;
+                }
+
+                return true;
+            }
+        }
+    });
+</script>
 </html>

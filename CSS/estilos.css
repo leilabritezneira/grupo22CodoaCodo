@@ -152,7 +152,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="text"], 
     font-family: "Urbanist";
 }
 
-input[type="submit"] {
+.submit {
   background-color: rgba(255, 153, 51, 1);
   color: #fff;
   padding: 10px 20px;
@@ -163,7 +163,7 @@ input[type="submit"] {
   font-family: "Urbanist";
 }
 
-input[type="submit"]:hover {
+.submit :hover {
   background-color: orange;
 }
 
@@ -669,4 +669,47 @@ a:hover {
   .banner {
       width: 425px;
   }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 50px;
+  border: 3px solid rgba(255, 123, 0, 0.808);
+  border-radius: 5vh;
+  z-index: 1000;
+  opacity: 0;  /* Inicialmente oculto */
+  pointer-events: none; /* Evita que los elementos detrás del modal sean clickeables */
+  transition: opacity 0.5s;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto; /* Habilita eventos en el modal */
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);  /* Color de fondo con opacidad */
+  z-index: 999; /* Z-index menor que el modal para que esté detrás */
+  pointer-events: none; /* Evita que los elementos detrás del fondo sean clickeables */
+  transition: opacity 0.5s;
+  opacity: 0; /* Inicialmente oculto */
+}
+
+.modal-background.active {
+  pointer-events: auto; /* Habilita eventos en el fondo */
+  opacity: 1; /* Muestra la opacidad cuando el modal está activo */
+}
+
+.error {
+  color: orangered;
+  font-family: "Urbanist";
 }
