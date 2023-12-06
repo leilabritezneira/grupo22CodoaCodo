@@ -160,6 +160,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="text"], 
   border-radius: 5px;
   cursor: pointer;
   margin-top: 50px;
+  margin-right: 50px;
   font-family: "Urbanist";
 }
 

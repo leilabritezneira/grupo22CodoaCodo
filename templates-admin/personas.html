@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header" class="bg-info shadow p-4 font-weight-bold text-center h4"></header>
+    <main>
+        <section class="container d-flex justify-content-center">
+            <div id="app" class="m-5 p-5 border border-info bg-light rounded shadow-lg">
+                <a class="btn btn-primary m-5 d-inline-flex justify-content-center" href="ingresar_persona.html">Nuevo</a>
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando" class="d-flex justify-content-center">
+                        <p>Cargando .....</p>
+                    </section>
+                    <section v-else class="d-block justify-content-center">
+                        <div >
+                            <table class="table">
+                                <thead class="thead-light ">
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Telefono</th>
+                                        <th> Borrar </th>
+                                        <th> Modificar </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="persona in personas">
+                                        <td scope="row">{{persona.id}}</td>
+                                        <td>{{persona.nombre}}</td>
+                                        <td>{{persona.email}}</td>
+                                        <td>{{persona.telefono}}</td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-danger d-inline-flex justify-content-center" v-on:click="eliminar(persona.id)">Eliminar</button>
+                                        </td>
+                                        <td>    
+                                            <a class="btn btn-outline-primary d-inline-flex justify-content-center" :href="'editar_persona.html?id='+ persona.id+'&nombre=' +persona.nombre" >Editar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/personas.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

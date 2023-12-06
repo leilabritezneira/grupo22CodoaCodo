@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Registrar</title>
+</head>
+<body>
+    <header id="header" class="bg-info shadow p-4 font-weight-bold text-center h4"></header>
+    <main>
+        <section class="container text-white">
+            <div class="container-form m-5 p-5 border border-info bg-light rounded shadow-lg">
+                <form action="" class="px-5">
+                    <div class="text-secondary m-3 d-flex justify-content-center">
+                        <label for="nombre">Nombre: </label>
+                        <input class="ml-2 border rounded" type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="text-secondary m-3 d-flex justify-content-center">
+                        <label for="nombre">Email: </label>
+                        <input class="ml-3 border rounded" type="text" name="email" id="email">
+                    </div>
+                    <div class="text-secondary m-3 d-flex justify-content-center">
+                        <label for="nombre">Telefono: </label>
+                        <input class="ml-3 border rounded" type="text" name="telefono" id="telefono">
+                    </div>
+                    <div class="text-secondary m-5">
+                        <button class="btn btn-primary d-block m-auto" type="button" onclick="guardar()">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="../js/ingresar_persona.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

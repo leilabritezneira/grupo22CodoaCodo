@@ -53,6 +53,7 @@
             <textarea id="mensaje" name="mensaje" placeholder="Me gustaria saber mas sobre..." v-model="mensaje"></textarea>
 
             <button class="submit" type="submit" @click="enviarFormulario">Enviar</button>
+            <button class="submit" onclick="guardar()">Subscribite a nuestras ofertas</button>
         </form>
         <div class="modal-background" :class="{ 'active': mostrarModal }"  @click="mostrarModal = false"></div>
         <div class="modal" :class="{ 'active': mostrarModal }" @click="mostrarModal = false">
@@ -67,6 +68,7 @@
             <li><a href="catalogo.html">Catálogo</a></li>
             <li><a href="formulario.html">Contacto</a></li>
             <li><a href="sucursales.html">Sucursales</a></li>
+            <a href="../templates-admin/personas.html">Ver tabla</a>
         </ul>
         <div class="social-media">
             <a href="#"><img src="../imagenes/facebook.png" alt="Facebook"></a>
@@ -76,6 +78,7 @@
     </footer>
 </div>
 </body>
+<script src="../js/ingresar_persona.js"></script>
 <script>
     new Vue({
         el: '#app',
