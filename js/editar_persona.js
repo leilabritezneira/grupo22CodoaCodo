@@ -13,6 +13,8 @@ let resultado = {};
 // Iterar sobre los parámetros y guardar los nombres y valores en el objeto resultado
 for (const [nombre, valor] of datos) {
     resultado[nombre] = valor;
+    resultado[email] = valor;
+    resultado[telefono] = valor;
 }
 
 console.log(resultado); 
@@ -49,7 +51,7 @@ function modificar() {
             window.location.href = "./personas.html";  
         })
         .catch(err => {
-            //this.errored = true
+            this.errored = true
             console.error(err);
             alert("Error al modificar")
         })      

@@ -40,7 +40,7 @@
                                             <button type="button" class="btn btn-outline-danger d-inline-flex justify-content-center" v-on:click="eliminar(persona.id)">Eliminar</button>
                                         </td>
                                         <td>    
-                                            <a class="btn btn-outline-primary d-inline-flex justify-content-center" :href="'editar_persona.html?id='+ persona.id+'&nombre=' +persona.nombre" >Editar</a>
+                                            <a class="btn btn-outline-primary d-inline-flex justify-content-center" :href="'editar_persona.html?id='+ persona.id+'&nombre=' +persona.nombre+ '&email=' +persona.email+'&telefono='+persona.telefono" >Editar</a>
                                         </td>
                                     </tr>
                                 </tbody>
