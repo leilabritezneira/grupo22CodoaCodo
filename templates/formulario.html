@@ -108,6 +108,9 @@
                 if (this.validarFormulario()) {
                     // activa el boton de subscribite
                     this.puedeGuardar = true;
+                    this.nameError = false;
+                    this.emailError = false;
+                    this.emailFormatError = false;
                 }
             },
             validarFormulario() {
