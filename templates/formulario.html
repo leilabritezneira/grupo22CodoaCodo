@@ -35,7 +35,7 @@
 
         <form>
             <label for="nombre">Nombre y apellido<span>*</span></label>
-            <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" required v-model="nombre" @input="alEscribir">
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" required v-model="nombre" @input="alEscribir" :class="{ 'border-rojo': nameError }">
             <div v-if="nameError" class="error"> Este campo es obligatorio!</div>
 
             <label for="email">Correo Electrónico<span>*</span></label>
